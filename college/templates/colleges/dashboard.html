@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block sign_in %}
+
+{% endblock %}
+
+{% block user %}
+<li class="nav-item">
+    <a class="nav-link" href="#" style="color: white;">{{user.username}}</a>
+  </li>
+{% endblock %}
+
+{% block logout %}
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'logout' %}" style="color: white;">logout</a>
+  </li>
+{% endblock %}
+
+{% block content %}
+<div>
+    <p>Keep it real babe</p>
+</div>
+{% endblock %}
